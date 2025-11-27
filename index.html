@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minesweeper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <div class="app">
+    <div class="card">
+
+      <!-- HEADER -->
+      <div class="top">
+        <h1>Minesweeper</h1>
+
+        <div class="stats">
+          <div class="stat">
+            <span>Mines</span>
+            <b id="mine-count">000</b>
+          </div>
+          <div class="stat">
+            <span>Time</span>
+            <b id="timer">000</b>
+          </div>
+          <button id="reset-btn">😃 New Game</button>
+        </div>
+      </div>
+
+      <!-- DIFFICULTY -->
+      <div class="difficulty">
+        Difficulty:
+        <select id="difficulty">
+          <option value="easy">Easy (9×9, 10)</option>
+          <option value="medium">Medium (16×16, 40)</option>
+          <option value="hard">Hard (16×30, 99)</option>
+        </select>
+      </div>
+
+      <!-- GAME AREA -->
+      <div class="game-area">
+
+        <!-- BOARD -->
+        <div class="board-wrapper">
+          <div id="board" class="board"></div>
+        </div>
+
+        <!-- INSTRUCTIONS -->
+        <div class="instructions">
+          <h3>How to Play</h3>
+          <ul>
+            <li>🖱 Left Click / 👆 Tap to reveal a tile</li>
+            <li>🚩 Right Click / 📱 Long Press to place or remove flag</li>
+            <li>🔢 Numbers show how many mines are attached to the block</li>
+            <li>💣 Avoid all mines</li>
+            <li>✅ Reveal all safe tiles to win</li>
+            <li>⏱ Finish as fast as possible</li>
+            <li>🔁 New Game to restart</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="footer-name">
+      © 2025 MADHAVA SOURI KRISHNA
+    </div>
+
+    <div class="social-links">
+  <a href="https://github.com/sourikrishna" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/souri-krishna-38359a329?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/souri_chaluvadi?igsh=MTJtbnQ0cjd6NXhhcg==" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="mailto:sourichaluvadi2580@gmail.com" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
